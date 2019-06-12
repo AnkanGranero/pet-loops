@@ -1,0 +1,3 @@
+hur använder och när använder jag mig av computed ? Tex om jag vill ha 
+toner som en rörlig variabel som ändras då och då så kanske den ska 
+vara computed istället för ett state som måste muteras

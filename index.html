@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./index.css">
+    <title>Zoo</title>
+  </head>
+  <body>
+    <div id="app">
+    <button  @click="stop" v-if="playState">STOP</button>
+    <button  @click="play" v-else="playState">PLAY</button>
+
+    <div id="buttonWrapper">
+    <button id="chicken" @click="toggleAnimal('chicken')" >CHICKEN</button>
+    <button id="elephant" @click="toggleAnimal('elephant')" >ELEPHANT</button>
+    <button id="dog" @click="toggleAnimal('dog')" >DOG</button>
+    <button id="synth" @click="toggleAnimal('synth')" >SYNTH</button>
+    <button id="drums" @click="toggleAnimal('drums')" >DRUMS</button>
+
+   <div class="menuWrapper">
+      <ul class="menu">
+          <li class="one">
+            <a href="#">
+              <span id="drums" @click="toggleAnimal('drums')"  class="icon"></span>
+            </a>
+          </li>
+          <li class="two">
+            <a href="#">
+              <span id="chicken" @click="toggleAnimal('chicken')" class="icon"></span>
+            </a>
+          </li>
+          <li class="three">
+            <a href="#">
+              <span id="dog" @click="toggleAnimal('dog')" class="icon"></span>
+            </a>
+          </li>
+          <li class="four">
+            <a href="#">
+              <span id="synth" @click="toggleAnimal('synth')" class="icon"></span>
+            </a>
+          </li>
+          <li id="elephant" @click="toggleAnimal('elephant')" class="five">
+            <a href="#">
+              <span class="icon"></span>
+            </a>
+          </li>
+          <li class="six">
+            <a href="#">
+              <span class="icon"></span>
+            </a>
+          </li>
+        </ul>
+        
+        <svg height="0" width="0">
+          <defs>
+            <clipPath clipPathUnits="objectBoundingBox" id="sector">
+              <path fill="none" stroke="#111" stroke-width="1" class="sector" d="M0.5,0.5 l0.5,0 A0.5,0.5 0 0,0 0.75,.066987298 z"></path>
+            </clipPath>
+          </defs>
+        </svg>
+
+   </div>
+
+
+  </div>
+   
+    
+  </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>

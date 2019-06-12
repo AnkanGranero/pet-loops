@@ -1,0 +1,130 @@
+@import url(//fonts.googleapis.com/css?family=Indie+Flower);
+
+
+$base: rgb(233, 128, 233);
+
+body {
+    background: url("./src/assets/background.gif");
+    background-size: cover;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin: 30px auto;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+}
+@media all and (max-width: 320px) {
+  .menu {
+    width: 230px;
+    height: 230px;
+    padding: 0;
+  }
+}
+@media all and (min-width: 700px) {
+  .menu {
+    width: 700px;
+    height: 700px;
+    padding: 0;
+  }
+}
+.menu li { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  clip-path: url(#sector);
+
+  
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  &:hover {
+ 
+    background-color: rgb(0, 153, 255);
+   
+
+  }
+}
+.one {
+  background-color: $base;
+  background-color: rgb(101, 250, 230);
+  transform: rotate(0deg);
+}
+.two {
+  background-color: darken($base, 7%);
+  background-color: rgb(101, 220, 250);
+  transform: rotate(-60deg);
+}
+.three {
+  background-color: darken($base, 14%);
+  background-color: rgb(101, 250, 230);
+
+  transform: rotate(-120deg);
+}
+.four {
+  background-color: rgb(134, 243, 170);
+
+  transform: rotate(-180deg);
+}
+.five {
+
+ background-color: rgb(101, 220, 250);
+  transform: rotate(-240deg);
+}
+.six {
+
+  background-color: rgb(134, 243, 170);
+  transform: rotate(-300deg);
+}
+
+
+.one .icon {background: url("./src/assets/drumsNew.gif")no-repeat right top;
+    background-size: 100%;
+  transform: rotate(-0deg)}
+   
+ .two .icon {background: url("./src/assets/chickenNew.gif")no-repeat right top;
+        background-size: 100%;}
+        
+ .three .icon {background: url("./src/assets/dogNew.gif")no-repeat right top;
+            background-size: 100%;
+            transform: rotate(120deg)} 
+            
+
+            .four .icon {background: url("./src/assets/synthNew.gif")no-repeat right top;
+                background-size: 100%;
+                transform: rotate(-190deg)}
+                .five .icon {background: url("./src/assets/elephantNew.gif")no-repeat right top;
+                    background-size: 100%;
+                  transform: rotate(-120deg)} 
+                     
+                    .icon {
+                        position: absolute;
+                        /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
+                        right: 12%;
+                        top: 23%;
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
+                        transform: rotate(60deg);
+                        
+                        /* style further as needed */
+                        
+                        background-color: rgb(245, 231, 40);
+                        font-family: Indie Flower;
+                        font-size: 25px;
+                      }
+p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}

@@ -1,0 +1,151 @@
+@import url(//fonts.googleapis.com/css?family=Indie+Flower);
+body {
+  background: url("./src/assets/background.gif");
+  background-size: cover;
+}
+
+.menu {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin: 30px auto;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+}
+
+@media all and (max-width: 320px) {
+  .menu {
+    width: 230px;
+    height: 230px;
+    padding: 0;
+  }
+}
+@media all and (min-width: 700px) {
+  .menu {
+    width: 700px;
+    height: 700px;
+    padding: 0;
+  }
+}
+.menu li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: url(#sector);
+  /* try this one in Chrome/Opera/Safari */
+  /* clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%); */
+}
+.menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu li:hover {
+  background-color: gold;
+  background-color: #0099ff;
+}
+
+.one {
+  background-color: #e980e9;
+  background-color: #f7c108;
+  background-color: #65fae6;
+  /*  background-image: url("./src/assets/backgroundTwo.jpg"); */
+  transform: rotate(0deg);
+}
+
+.two {
+  background-color: #e462e4;
+  background-color: #65dcfa;
+  /*  background-image: url("./src/assets/backgroundThree.jpg"); */
+  transform: rotate(-60deg);
+}
+
+.three {
+  background-color: #de43de;
+  background-color: #a1abdb;
+  background-color: #65fae6;
+  /*  background-image: url("./src/assets/backgroundFour.jpg"); */
+  transform: rotate(-120deg);
+}
+
+.four {
+  background-color: #d825d8;
+  background-color: #b877af;
+  background-color: #eca58c;
+  background-color: #86f3aa;
+  /* background-image: url("./src/assets/backgroundTwo.jpg"); */
+  transform: rotate(-180deg);
+}
+
+.five {
+  background-color: #ba20ba;
+  /*  background-image: url("./src/assets/backgroundBlue.jpg"); */
+  background-color: #a3785f;
+  background-color: #5ae7d0;
+  background-color: #65dcfa;
+  transform: rotate(-240deg);
+}
+
+.six {
+  background-color: #9c1b9c;
+  background-color: #e95d32;
+  background-color: #86f3aa;
+  /*  background-image: url("./src/assets/backgroundGreen.jpg"); */
+  transform: rotate(-300deg);
+}
+
+.one .icon {
+  background: url("./src/assets/drumsNew.gif") no-repeat right top;
+  background-size: 100%;
+  transform: rotate(0deg);
+}
+
+.two .icon {
+  background: url("./src/assets/chickenNew.gif") no-repeat right top;
+  background-size: 100%;
+}
+
+.three .icon {
+  background: url("./src/assets/dogNew.gif") no-repeat right top;
+  background-size: 100%;
+  transform: rotate(120deg);
+}
+
+.four .icon {
+  background: url("./src/assets/synthNew.gif") no-repeat right top;
+  background-size: 100%;
+  transform: rotate(-190deg);
+}
+
+.five .icon {
+  background: url("./src/assets/elephantNew.gif") no-repeat right top;
+  background-size: 100%;
+  transform: rotate(-120deg);
+}
+
+.icon {
+  position: absolute;
+  /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
+  right: 12%;
+  top: 23%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
+  transform: rotate(60deg);
+  /* style further as needed */
+  background-color: #f5e728;
+  font-family: Indie Flower;
+  font-size: 25px;
+}
+
+p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.css.map */
